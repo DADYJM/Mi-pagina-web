@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Gestión de Redes LAN Empresariales</title>
+    <style>
+        /* Importación de fuentes */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap');
+
+        /* Variables de color */
+        :root {
+            --fondo-claro: #f5f5f5;
+            --seccion-blanca: #ffffff;
+            --color-secundario-a: #3c6c9c; 
+            --color-secundario-b: #c48a0d; 
+            --texto-suave: #333333;
+        }
+
+        body {
+            /* PROPIEDADES DE IMAGEN DE FONDO AÑADIDAS */
+            background-image: url('css/img/fondo.jpeg.webp');
+            background-size: cover; 
+            background-attachment: fixed; 
+            
+            background-color: var(--fondo-claro);
+            
+            color: var(--texto-suave);
+            font-family: 'Open Sans', 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Estilos para Contenedores y Layout */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+        }
+
+        section {
+            background-color: var(--seccion-blanca);
+            margin: 20px auto;
+            padding: 20px 40px;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: var(--texto-suave);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        /* Estilos de Tipografía */
+        h1, h2 {
+            font-family: 'Poppins', 'Montserrat', sans-serif;
+            color: var(--color-secundario-a);
+            text-align: center;
+        }
+
+        h3, h4 {
+            font-family: 'Roboto', sans-serif;
+            color: var(--color-secundario-b);
+            border-left: 5px solid var(--color-secundario-b);
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        /* Estilos de Componentes */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--color-secundario-a);
+            color: white;
+        }
+        
+        /* Estilo para iconos/logos en el header */
+        .logo {
+            max-width: 60px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diseño y Gestión Eficaz de Redes LAN Empresariales</h1>
+    </header>
+
+    <section id="presentacion">
+        <h2>La importancia digital de su negocio</h2>
+        
+        <p>Una red de área local (LAN) en un contexto empresarial es la infraestructura que soporta todas las operaciones digitales. Su diseño debe ser robusto y escalable para garantizar el éxito operativo.</p>
+    </section>
+
+    <section id="introduccion">
+        <h3>Introducción: Fundamentos y Propósito</h3>
+        <p>Una LAN empresarial conecta dispositivos dentro de un área limitada. Su función es crucial para la transferencia de datos y la compartición segura de recursos. Un diseño adecuado impacta directamente en la eficiencia y la seguridad de la información corporativa.</p>
+        <h4>Importancia Crítica</h4>
+        <ul>
+            <li>Productividad: Asegura el ancho de banda necesario para aplicaciones clave.</li>
+            <li>Seguridad: Permite la segmentación lógica (VLANs) para aislar amenazas.</li>
+            <li>Escalabilidad: Soporta el crecimiento de la plantilla y la integración de nuevas tecnologías (IoT, VoIP).</li>
+        </ul>
+    </section>
+
+    <section id="desarrollo">
+        <h3>Desarrollo: Conceptos y Componentes Clave</h3>
+        <p>El diseño se basa en la topología jerárquica (Acceso, Distribución, Núcleo), utilizando protocolos como STP para la redundancia y QoS para la priorización de tráfico.</p>
+
+        <h4>Ventajas y Desventajas</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ventaja</th>
+                    <th>Desventaja</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Control centralizado y Alta velocidad.</td>
+                    <td>Mayor complejidad de gestión y Alto costo inicial.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Componentes Físicos</h4>
+        <p>Los elementos esenciales incluyen Switches de Capa 3 (Distribución), Routers perimetrales, y un robusto cableado estructurado (Cat 6/Fibra Óptica).</p>
+        
+        <figcaption>Componentes de una LAN: Switch de Distribución y Panel de Parcheo.</figcaption>
+    </section>
+
+    <section id="casos">
+        <h3>Ejemplos Prácticos y Modelos</h3>
+        <p>Un caso común es la migración de una red plana a una red segmentada con VLANs para aislar el tráfico de voz (VoIP) del tráfico de datos corporativos, mejorando la calidad de servicio y la seguridad.</p>
+
+        <h4>Ejemplo de Segmentación Lógica</h4>
+        <ul>
+            <li>VLAN 10: Datos de Usuarios (PCs).</li>
+            <li>VLAN 20: Voz (Teléfonos IP).</li>
+            <li>VLAN 30: Acceso Wi-Fi de Invitados.</li>
+        </ul>
+        <p>La fibra óptica se usa para los enlaces troncales entre edificios, mientras que el cobre UTP soporta el cableado horizontal.</p>
+        
+        <figcaption>Arquitectura de Red Jerárquica con Segmentación por VLANs.</figcaption>
+    </section>
+
+    <section id="conclusiones">
+        <h3>Conclusiones</h3>
+        <p>La gestión de redes es un ciclo continuo de monitoreo, mantenimiento preventivo y auditorías de seguridad. La importancia de la LAN radica en su capacidad para soportar la transformación digital y la adopción de tecnologías como la nube y el IoT empresarial. Las redes definidas por software (SDN) son la tendencia para el futuro.</p>
+    </section>
+
+    <footer>
+        <p>Derechos Reservados © | Dadith Artuto Jimenez Pinillos | 2025</p>
+    </footer>
+
+</body>
+</html>
